@@ -1,0 +1,12 @@
+
+body {
+	font-family: 'Montserrat Alternates', sans-serif;
+	background-image: linear-gradient(90deg, rgb(27, 7, 73), rgb(56, 0, 176));
+	line-height: 1.3;
+	position: relative;
+}
+
+.mensagem {
+	background-image: linear-gradient(90deg, rgba(27, 7, 73, 0.896), rgba(56, 0, 176, 0.912));
+	color: white;
+}

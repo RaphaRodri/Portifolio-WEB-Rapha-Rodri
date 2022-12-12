@@ -1,41 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header-nav.css">
+    <link rel="stylesheet" href="css/nav-mobile.css">
+    <link rel="stylesheet" href="css/section.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="shortcut icon" href="assets/favicon.png" width="100px" type="image/svg">
+
     <title>Portifólio Web Rapha Rodri</title>
 
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <!-- CAIXA DE BOAS VINDAS JS -->
+    <SCRIPT LANGUAGE="Javascript"> 
+        var namePrompt =  prompt("Sua presença me agrada! Deixe aqui seu nome se desejar: ","");
+        if (namePrompt == null || namePrompt == "") namePrompt = "Anônimo";
+        function dispname (namePrompt) { 
+        document.write(""+namePrompt+"");
+        }
+    </SCRIPT>   
 </head>
 <body>
-    <header>
-        <div class="caixa">
-        <nav>
-            <li><a href="index.html">Sobre mim</a></li>
-            <li><a href="index.html">Formação</a></li>
-            <li><a href="index.html">Experiências</a></li>
-            <li><a href="index.html">Habilidades</a></li>
-            <li><a href="index.html">Interesses</a></li>
-        </nav>
+    <!-- CAIXA DE BOAS VINDAS JS --> 
+    <div class="mensagem">
+        <center>
+            <SCRIPT LANGUAGE="Javascript">
+            document.write("Amei sua visita! Volte sempre, ");
+            dispname(namePrompt);
+            document.write("! ♥");
+            </SCRIPT>   
+        </center>
     </div>
+
+    <header>
+        <div class="navegador">
+            <nav>
+                <ul>
+                    <li><a href="#sobre-mim">Sobre mim</a></li>
+                    <li><a href="#formacao">Formação</a></li>
+                    <li><a href="#experiencias">Experiências</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#interesses">Interesses</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <section class="perfil">
+
+    <!-- NAVEGADOR MOBILE --> 
+
+    <img class="icone-menu" src="assets/menu-burger.svg" width="32px" height="40px">
+
+    <div id="menu-mobile" class="menu-mobile display-menu">
+        <img id="menu-exit" class="icone-exit" src="assets/menu-exit.svg" height="32px" width="40px" >
+        <div class="nav-mobile">
+            <ul>
+                <li><a href="#sobre-mim">sobre mim</a></li>
+                <li><a href="#formacao">formação</a></li>
+                <li><a href="#experiencias">experiências</a></li>
+                <li><a href="#habilidades">habilidades</a></li>
+                <li><a href="#interesses">interesses</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <section>
+        <div class="perfil">
             <h1>Rapha Rodri</h1>
-            <h2>Desenvolvedor de Software</h2>
-        <div class="contato">
-            <img src="./assets/icon-email.svg" alt="ícone de e-mail" />
-            <p>raphaelperfil@hotmail.com</p>
+            <h2>Desenvolvedor Front-End</h2>
+
+            <div class="contato">
+                <img class="icones-informacoes" src="./assets/icon-email.svg" alt="ícone de e-mail" />
+                <p>raphaelperfil@hotmail.com</p>
+            </div>
+            <div class="contato">
+                <img class="icones-informacoes" src="./assets/icon-whatsapp.svg" alt="ícone do WhatsApp"/>
+                <p>(71) 99108-7397</p>
+            </div>
+            <div class="contato">
+                <img class="icones-informacoes" src="./assets/icon-local.svg" alt="ícone de localização"/>
+                <p>Salvador/BA - Brasil</p>
+            </div>
         </div>
-        <div class="contato">
-            <img src="./assets/icon-whatsapp.svg" alt="ícone do WhatsApp"/>
-            <p>(71) 99108-7397</p>
-        </div>
-        <div class="contato">
-            <img src="./assets/icon-local.svg" alt="ícone de localização"/>
-            <p>Salvador/BA - Brasil</p>
-        </div>
+
         <div class="avatar">
             <img src="./assets/iconemedio.png" alt="foto de rosto do Rapha"/>
         </div>
@@ -46,6 +96,69 @@
         </div>
     </section>
     
+    <main>
+        <div class="sobre-mim" id="sobre-mim">
+            <img src="assets/sobre-mim.svg" class="foto-sobre-mim margem-caixas">
+
+            <div class="texto-sobre-mim">
+                <h3 class="titulo">Sobre mim</h3>
+                <p> Olá, meu nome é Raphael e pode me chamar de Rapha. Graduei em Arquitetura onde trabalhei com projetos em diversas áreas, também me aventurei como Streamer na Twitch Afiliado e agora estou estudando progamação numa trilha incrível em conjunto com a Alura + Suzano, crescendo como Dev!
+                </p>
+            </div>
+        </div>
+
+        <div id="formacao">
+            <h3 class="titulo">Formação</h3>
+            <p class="background-texto margem-caixas">Graduação em Arquitetura e Urbanismo – Universidade Salvador (completo - 2019)<br>
+            </p>
+            <p class="background-texto margem-caixas">Técnico em Desenho da Construção Civil - Unime (completo - 2016)<br>
+            </p>
+            <p class="background-texto margem-caixas">Programação - Alura (concluído 2022.2) - Certificado <a href="https://cursos.alura.com.br/user/raphaelperfil/fullCertificate/ba095beda5290086c92189349f42ea41" target="_blank">aqui</a>.<br>
+            </p>
+        </div>
+
+        <div id="experiencias">
+            <h3 class="titulo">Experiências</h3>
+            <p class="background-texto margem-caixas">Assistente de Projeto - 5CINQUE (2019 - 2020)<br>
+            </p>
+            <p class="background-texto margem-caixas">Estagiário Arquitetura - 5CINQUE (2019)<br>
+            </p>
+        </div>
+
+        <div id="habilidades">
+            <h3 class="titulo">Habilidades</h3>
+            <img src="/assets/html5.svg" class="skills-habilidades" id="habilidade-html5">
+            <img src="/assets/css3.svg" class="skills-habilidades" id="habilidade-css3">
+            <img src="/assets/js.svg" class="skills-habilidades" id="habilidade-js">
+            <img src="/assets/github.svg" class="skills-habilidades" id="habilidade-github">
+            <img src="/assets/git.svg" class="skills-habilidades" id="habilidade-git">
+            <img src="/assets/cad.svg" class="skills-habilidades" id="habilidade-cad">
+            <img src="/assets/sketchup.svg" class="skills-habilidades" id="habilidade-sketchup">
+            <img src="/assets/lumion.svg" class="skills-habilidades" id="habilidade-lumion">
+            <img src="/assets/office.svg" class="skills-habilidades" id="habilidade-office">
+        </div>
+
+        <div id="interesses">
+            <h3 class="titulo">Intereses</h3>
+            <img src="/assets/python.svg" class="skills-habilidades" id="habilidade-python">
+            <img src="/assets/revit.svg" class="skills-habilidades" id="habilidade-revit">
+        </div>
+
+        <div id="caixa-texto-habilidades" class="display-informacoes-habilidades">
+            <p id="texto-hablidades" class="background-texto margem-caixas"></p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-informacoes">
+        <img src="./assets/icon-footer.svg" class="icones-informacoes">
+        
+        <p class="fale-comigo">Fale comigo através do meu <a href="mailto:raphaelperfil@hotmail.com">e-mail</a> ou <a href="https://api.whatsapp.com/send?phone=5571991087397" target="_blank">whatsapp</a>.</p>  
+        </div>
+        
+        <p>Raphael Rodrigues<br>2022</p>
+    </footer>
     
+    <script src="main.js"></script>
 </body>
 </html>
