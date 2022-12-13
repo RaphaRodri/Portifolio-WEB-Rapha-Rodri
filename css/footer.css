@@ -20,5 +20,6 @@ footer, a {
     }
     .footer-informacoes  {
         width: 200px;
+        margin:auto;
     }
 }

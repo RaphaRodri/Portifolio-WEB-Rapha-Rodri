@@ -56,12 +56,12 @@ main div {
     margin: 2.3%;
 }
 
-.skills-hablidades{
+.skills-habilidades {
     width: 80px;
     transition: 0.7s transform;
 }
 
-.skills-hablidades:hover{
+.skills-habilidades:hover {
     cursor: pointer;
     transform: scale(1.2);
 }
